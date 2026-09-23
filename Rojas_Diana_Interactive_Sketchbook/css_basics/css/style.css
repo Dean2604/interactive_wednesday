@@ -1,0 +1,32 @@
+/* Diana Rojas
+    Fall 2026 */
+
+body {
+    background-color: #C8A2C8;
+    color:#FFFFFF;
+}
+
+p {
+    color: #EB7F00;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+h3 {
+    text-align:center;
+
+}
+
+.no-underline {
+    text-decoration: none;
+}
+
+.orderedList {
+    color:black;
+}
+
+.Reflection {
+    text-align: left;
+    color:#603460;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
