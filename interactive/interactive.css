@@ -6,6 +6,8 @@ h1, header{
     text-align: center;
     font-family: Snell Roundhand, cursive;
     font-size: 40px;
+    border-style: dashed;
+    border-color:rgb(149, 98, 156);
 }
 
 header {
@@ -50,4 +52,46 @@ h4 , .passage{
     margin-left: auto;
     max-width: 100%;
     height: auto;
+    border-radius:15px;
+
+}
+
+.centered_video{
+    
+    padding: 20px; 
+    display:block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+    max-height:fit-content;
+}
+
+footer, #tiktok_logo {
+    font-family: Snell Roundhand, cursive;
+    font-size:30px;
+    display: flex;
+    justify-content: center;
+    gap: 20%;
+}
+
+#container, #container2, #tiktok_logo {
+    font-size: 30px;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.passage{
+    padding-inline: 10%;
+}
+
+hr{
+    border: none;
+    height: 1px;
+    background-color:black;
+}
+
+.portfolio{
+    text-align:center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
 }
