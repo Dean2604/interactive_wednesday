@@ -130,3 +130,49 @@ hr{
     max-width: 800px;
     line-height: 1.6;
 }
+
+.projects-dropdown {
+    position: relative;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.projects-dropdown summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.projects-dropdown summary::-webkit-details-marker {
+    display: none;
+}
+
+.projects-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 180px;
+    flex-direction: column;
+    background-color: rgb(202, 148, 194);
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 10;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+.projects-dropdown:hover .projects-menu,
+.projects-dropdown[open] .projects-menu {
+    display: flex;
+}
+
+.projects-menu a {
+    padding: 10px;
+    margin: 0;
+    text-decoration: none;
+    color: black;
+}
+
+.projects-menu a:hover {
+    background-color: white;
+    color: rgb(202, 148, 194);
+}

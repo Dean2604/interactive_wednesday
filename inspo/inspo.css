@@ -1,0 +1,46 @@
+/* Inspo page artist layout */
+
+.artists-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap:
+    width: 90%;
+    margin: 0 auto;
+}
+
+.artist {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+.artist img {
+    width: 100%;
+    max-width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.8s ease-in-out, box-shadow 0.8s ease-in-out;
+}
+
+.artist img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.artist h4 {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.inspo-reflection {
+    width: 90%;
+    margin: 40px auto;
+    line-height: 1.6;
+}
+
+.artist h3 {
+    font-size: 35px;
+}
