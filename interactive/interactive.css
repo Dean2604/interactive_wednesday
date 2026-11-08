@@ -176,3 +176,64 @@ hr{
     background-color: white;
     color: rgb(202, 148, 194);
 }
+
+/* floating decorations */
+.floating-decorations {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.float-item {
+    position: absolute;
+    pointer-events: auto;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+
+/* pink hearts */
+.heart {
+    color: #f4a2ce;
+    font-size: 35px;
+    top: 25%;
+    left: 8%;
+}
+
+.heart.two {
+    top: 70%;
+    left: 85%;
+    font-size: 28px;
+}
+
+/* white stars */
+.star {
+    color: white;
+    font-size: 40px;
+    top: 25%;
+    right: 12%;
+}
+
+.star.two {
+    top: 80%;
+    left: 5%;
+    font-size: 100px;
+}
+
+/* sparkles */
+.sparkle {
+    color: #f4a2ce;
+    font-size: 50px;
+    top: 55%;
+    left: 12%;
+}
+
+.sparkle.two {
+    top: 40%;
+    right: 8%;
+    font-size: 75px;
+}
+
+.float-item:hover {
+    transform: scale(2) rotate(30deg);
+}
