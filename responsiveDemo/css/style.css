@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+
+/* how do we reset our css again? what are the three things we need to call out here? */
+}
+
+body {
+
+  min-height: 100vh;
+  /* set min-height to what? */
+  width: 100%;
+  /* set width to what? */
+  background-color: lightblue;
+  /* margin: ?; */
+  margin: 0;
+  font-size: 100%;
+ }
+
+ #topPage {
+  /* display: ?; */
+  /* what else? */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+ 
+ }
+
+ #logo {
+  width: 15%;
+  max-width: 200px;
+}
+
+#pagetitle {
+  background-color: rgb(0,0,255);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  flex: 1;
+}
+
+ h1 {
+  font-size: 3.25em;
+}
+
+h2 {
+  font-size: 3em;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2.25em;
+}
+
+p {
+  font-size: 1.125em;
+}
+
+a {
+  color: chartreuse;
+} 
+
+.bodytext {
+  padding-left: 25px;
+}
+
+/* --------styles--------------- */
+
+.directions {
+  background-color: blueviolet;
+  color: aquamarine;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-align: center;
+  padding: 10px;
+}
+
+#viewport {
+  background-color: rgb(200,255,100);
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#viewport img {
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+  display: block;
+}
+
+#viewportImage {
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+  display: block;
+}
+
+#before, #after {
+  border: 1px solid black;
+  width: 100%;
+  height: auto;
+}
+
+#beforeAfter {
+  background-color: chartreuse;
+  /* display: ?*/
+  /* what else */
+  /* width: ? */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+  width: 100%;
+
+}
+
+#gifs {
+  background-color: coral;
+  /* what else */
+  /* what else */
+  width: 100%;
+  margin-bottom: 25px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+#leftgif, #centergif, #rightgif {
+  border: 1px solid black;
+  flex: 1 1 250px;
+  min-width: 0;
+
+}
+
+.gifsSize {
+  width: 100%;
+  height: auto;
+}
+
+.bodytext {
+
+  background-color: cyan;
+  padding: 15px;
+
+}
+
+#media {
+  background-color: hotpink;
+  padding: 10px;
+}  
+
+/* -------- media queries --------- */
+@media screen and (max-width: 768px){
+
+  /* body {
+    font-size: 75%;
+  } */
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  #logo {
+    width: 25%;
+  }
+
+  /* #viewport img {
+    width: 100%;
+  } */
+
+  #viewportImage {
+    width: 100%;
+  }
+
+  #beforeAfter {
+    flex-direction: column;
+  }
+
+  #gifs {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  * {
+    font-size: 90%;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.75em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  #topPage {
+    flex-direction: column;
+  }
+
+  #logo {
+    width: 35%;
+  }
+
+  #gifs {
+    flex-direction: column;
+  }
+}
+
+
+
+
