@@ -1,6 +1,20 @@
-body {
-    background-color: rgb(245, 209, 249);
+/* Responsive Setup */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
+html {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(245, 209, 249);
+} 
 
 h1, header{
     text-align: center;
@@ -236,4 +250,128 @@ hr{
 
 .float-item:hover {
     transform: scale(2) rotate(30deg);
+}
+
+/* checkpoint 2 */
+/* tablet */
+@media screen and (max-width: 900px) {
+
+    .entry-page h1 {
+        font-size: 34px;
+        padding: 10px;
+    }
+
+    .entry-page .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 12px;
+    }
+
+    .entry-page .navbar a {
+        margin: 0;
+    }
+
+    .entry-page .centered_image {
+        width: 85%;
+        max-width: 600px;
+        height: auto;
+    }
+
+    .entry-page .passage {
+        padding-inline: 6%;
+        font-size: 18px;
+    }
+
+    .entry-page footer {
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+}
+
+
+/* mobile */
+@media screen and (max-width: 600px) {
+
+    .entry-page h1 {
+        font-size: 28px;
+        padding: 12px;
+    }
+
+    .entry-page .navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        padding: 15px;
+    }
+
+    .entry-page .navbar a {
+        font-size: 18px;
+        padding: 8px;
+        margin: 0;
+    }
+
+    .entry-page h2 {
+        font-size: 22px;
+        padding: 10px;
+    }
+
+    .entry-page .centered_image {
+        width: 95%;
+        height: auto;
+    }
+
+    .entry-page .passage {
+        padding: 15px;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .entry-page footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        font-size: 24px;
+        padding: 15px;
+    }
+
+    .entry-page .heart,
+    .entry-page .star,
+    .entry-page .sparkle {
+        font-size: 25px;
+    }
+
+    .entry-page .star.two,
+    .entry-page .sparkle.two {
+        font-size: 35px;
+    }
+
+    .entry-page .heart.two {
+        font-size: 22px;
+    }
+}
+
+.screenshot-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.screenshot {
+    flex: 1;
+    text-align: center;
+    min-width: 0;
+}
+
+.screenshot h2 {
+    margin-bottom: 15px;
+}
+
+.screenshot img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+    display: block;
 }
